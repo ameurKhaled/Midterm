@@ -1,5 +1,10 @@
 package readfile;
 
+import java.io.BufferedReader;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
+
 public class ReadTextFile {
     /*
      *
@@ -17,10 +22,44 @@ public class ReadTextFile {
      *
      */
 
+
     public static void main(String[] args) {
 
         //write your code here
 
-    }
+        FileReader fr = null;
+        BufferedReader br = null;
 
+        try {
+            fr = new FileReader("/home/ameur/workspace_qaway/Midterm/src/readfile/file-data");
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+            //throw new RuntimeException(e);
+        }
+
+        br = new BufferedReader(fr);
+
+        String line = "";
+
+
+
+        do {
+            System.out.println(line);
+            try {
+                line = br.readLine();
+            } catch (IOException e) {
+                throw new RuntimeException(e);
+            }
+
+        } while (line != null);
+
+        try {
+            fr.close();
+            br.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+
+        }
+
+    }
 }

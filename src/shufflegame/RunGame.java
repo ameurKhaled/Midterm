@@ -6,9 +6,11 @@ public class RunGame {
 
         //run this main method to play
 
+
         ShuffleGame shuffleGame = new ShuffleGame();
 
         shuffleGame.play();
+
 
     }
 }

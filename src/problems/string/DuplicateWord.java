@@ -48,7 +48,7 @@ public class DuplicateWord {
             }
         }
     }
-    @meurKpwd91g
+
     public static void main(String[] args) {
         //run your code here
 

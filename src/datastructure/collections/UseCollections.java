@@ -20,10 +20,45 @@ public class UseCollections {
      *
      */
 
-    public static void main(String[] args) {
+   // public static void main(String[] args) {
+
+
 
         //write your code here
+        static void getUnion(int array1[], int n, int array2[], int m)
+        {
 
+            // Defining set container s
+            HashSet<Integer> s = new HashSet<>();
+
+            // Inserting array elements in s
+            for (int i = 0; i < n; i++)
+                s.add(array1[i]);
+
+            for (int i = 0; i < m; i++)
+                s.add(array2[i]);
+            System.out.print(
+                    "Number of elements after union operation: "
+                            + s.size() + "\n");
+            System.out.print("The union set of both arrays is :"
+                    + "\n");
+
+            System.out.print(
+                    s.toString()
+                            + " "); // s will contain only distinct
+            // elements from array a and b
+        }
+
+        // Driver Code
+        public static void main(String[] args)
+        {
+            int array1[]  = {1, 3, 2, 4, 8, 9, 0};
+            int array2[]  = {1, 3, 7, 5, 4, 0, 7, 5};
+
+            getUnion(array1, 7, array2, 8);
+        }
     }
 
-}
+
+
+

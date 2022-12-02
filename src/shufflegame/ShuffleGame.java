@@ -6,6 +6,10 @@ import java.util.concurrent.ThreadLocalRandom;
 
 public class ShuffleGame implements GameRoadMap{
 
+    // static Character answer;
+    int pickAnswer;
+
+    //static Character playAgain;
     Scanner scanner = new Scanner(System.in);
 
     int[] array = {1, 0 ,1};
@@ -30,9 +34,25 @@ public class ShuffleGame implements GameRoadMap{
      * captures the user input (1, 2 or 3) saves it in an integer variable and returns it
      * @return playerGuess: userInput value
      */
-    public int playerGuess() {
+    public  int playerGuess() {
         //implement here
-        return 0;
+        //        pick 1, 2, or 3!
+        //if the answer is not 1, 2, or 3 keep asking the question (loop)
+        do {
+            System.out.println(" pick 1, 2, or 3!");
+            Scanner scanner = new Scanner(System.in);
+            pickAnswer = scanner.nextInt();
+        }
+        while (pickAnswer != 1 && pickAnswer != 2 && pickAnswer != 3);
+
+        if (array[pickAnswer - 1] == 0) {
+            System.out.println("good guess!");
+
+        } else {
+            System.out.println("sorry!!! wrong guess");
+
+        }
+        return pickAnswer;
     }
 
     /**
@@ -43,6 +63,13 @@ public class ShuffleGame implements GameRoadMap{
      */
     public void checkGuess(int[] shuffledArray, int playerGuess) {
         //implement here
+        if (array[pickAnswer - 1] == 0) {
+            System.out.println("good guess!");
+
+        } else {
+            System.out.println("sorry!!! wrong guess");
+
+        }
     }
 
     /**
@@ -54,3 +81,4 @@ public class ShuffleGame implements GameRoadMap{
     }
 
 }
+

@@ -24,7 +24,7 @@ public class UseHashMap {
         map.put(6, "Seattle");
 
         //write your code here
-
-
+        System.out.println(" The map entries are: "+map);
+        System.out.println(map.get(3));
     }
 }

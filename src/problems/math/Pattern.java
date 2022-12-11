@@ -11,9 +11,35 @@ public class Pattern {
      *
      */
 
+    int decNumber(int number) {
+
+        switch (number) {
+
+            case 1 :
+                System.out.println("");
+                break;
+
+            case 2:
+                System.out.println("");
+                break;
+
+            case 3:
+                System.out.println("");
+                break;
+            default:
+                System.out.println("");
+                break;
+
+
+        }
+        return number;
+    }
+
     public static void main(String[] args) {
 
         //write your code here
+
+
 
     }
 }

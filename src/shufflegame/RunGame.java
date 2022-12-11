@@ -4,12 +4,14 @@ public class RunGame {
 
     public static void main(String[] args) {
 
-        //run this main method to play
+        //run this main method to play0
 
 
-        ShuffleGame shuffleGame = new ShuffleGame();
+        ShuffleGame shuffleGame1 = new ShuffleGame();
 
-        shuffleGame.play();
+        shuffleGame1.play();
+
+
 
 
     }

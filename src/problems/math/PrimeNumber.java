@@ -15,14 +15,14 @@ public class PrimeNumber {
     public static void main(String[] args) {
 
         //write your code here
-       /*
+
         int i =0;
 
         int num =0;
         //Empty String
         String  primeNumbers = "";
 
-        for (i = 1; i <= 10; i++)
+        for (i = 1; i <= 1000000; i++)
         {
             int counter=0;
             for(num =i; num>=1; num--)
@@ -40,7 +40,7 @@ public class PrimeNumber {
         }
         System.out.println("Prime numbers from 1 to 100 are :");
         System.out.println(primeNumbers);
-        */
+
 
 
     }
